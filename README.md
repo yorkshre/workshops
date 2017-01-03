@@ -1,6 +1,6 @@
 ## Pobawmy się programując z Micro:bit
 
-
+> Ta praca znajduje się na licencji [Creative Commons] (https://creativecommons.org/licenses/by/3.0/pl/legalcode)
 
 ## Wprowadzenie 
 
