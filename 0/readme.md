@@ -10,7 +10,7 @@ Należy zwrócić uwagę na jedno: na drugiej stronie instalatora nazwanej "Cust
 
 ![alt text][logo]
 
-[logo]: https://tutorial.djangogirls.org/pl/python_installation/images/add_python_to_windows_path.png "Logo Title Text 2"
+[logo]: https://github.com/yorkshre/workshops/tree/master/0/img/1.png "zrzut ekranu"
 
 ##Linux
 Jest bardzo prawdopodobne, że masz już zainstalowanego Pythona wraz z systemem. Aby się upewnić (a także sprawdzić jego wersję) otwórz konsolę i wpisz następujące polecenie:
