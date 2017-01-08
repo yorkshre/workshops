@@ -121,12 +121,19 @@ Teraz napiszemy prosty program do kalkulacji BMI (Body Mass Index). Formuła do 
 >BMI = (masa w kg) / (wzrost w metrach) do kwadratu
 
 Umiemy dzielić, potęgować i wypisywać liczby. Stwórzmy więc nowy plik o nazwie bmi.py i spróbujmy napisać program obliczający nasze BMI:
-
+```markdown
+print("Twoje BMI wynosi:", 65.5 / (1.75 ** 2)
+```
 Po uruchomieniu:
+
 ```markdown
 $ python bmi.py
 ```
 W wyniku dostaniemy:
+
+```markdown
+Twoje BMI wynosi: 21.387755102040817
+```
 
 Jak widać, nasz program wymaga jeszcze nieco pracy:
 
@@ -141,8 +148,19 @@ Ale programowanie to w końcu sztuka rozwiązywania problemów, więc do dzieła
 Spróbujmy więc rozwiązać pierwszy problem. Na początek chcielibyśmy, aby nasz program był bardziej czytelny, tj. aby dla czytającego było oczywiste, która wartość to waga, a która wzrost.
 
 Dlatego nadamy tym wartościom nazwy:
+```markdown
+waga = 65.5
+wzrost = 1.75
+
+bmi = waga / wzrost**2
+print("Twoje BMI wynosi:", bmi)
+```
 
 Wynik działania programu się nie zmienił:
+
+```markdown
+Twoje BMI wynosi: 21.387755102040817
+```
 
 Aby lepiej zrozumieć działanie nazw, wróćmy na chwilę do trybu interaktywnego i nadajmy kilka nazw:
 ```markdown
@@ -174,13 +192,6 @@ Nazwy są niezależne od siebie. Przed chwilą przypisaliśmy do x nową wartoś
 Note
 ```
 
-##Dla znających inne języki.
-
-Pewnie dziwi Cię, dlaczego nie używamy pojęcia "zmienna". To dlatego, że nazwy w Pythonie nie działają tak samo jak zmienne. W większości języków operacja y = x stworzyłaby kopię wartości x i wstawiła ją do zmiennej y.
-
-W Pythonie nic nie jest po kryjomu kopiowane. y staje się jedynie alternatywną nazwą dla tej samej wartości. Jeśli zmienimy tę wartość, tak x, jak i y pokażą to samo.
-
-W naszym przykładzie nie zmieniliśmy wartości liczby 42, a jedynie wartość przypisaną do x (w szczególności wartości liczb są niezmienne, choć w 1897 r. izba niższa stanu Indiana zatwiedziła zmianę wartości liczby pi na 3 - wniosek upadł dopiero w Senacie). Dlatego print(y) da nam 42.
 
 Jak już widzieliśmy w naszym programie, nazwy możemy nadawać też wynikom obliczeń oraz używać nazw w obliczeniach:
 ```markdown
@@ -543,43 +554,6 @@ Do zgrupowanych wartości możemy odwołać się używając ich pozycji w krotce
 15
 ```
 
-##Formatowanie
-
-Wracając do naszego programu: aktualnie jego wynik sprowadza się do jednej linijki. Teraz chcemy wypisać zarówno BMI jako liczbę oraz przedział, w którym się mieści, tj.:
-
-Twoje BMI jest równe: 21.39 (waga prawidłowa)
-Zmodyfikuj aktualny program tak, aby obliczone BMI było dostępne pod nazwą bmi, a nazwa przedziału pod nazwą category. Wtedy będziemy mogli użyć :func:`print` i uzyskać pożądany wynik:
-
-No prawie, nadal mamy zbyt dużo cyfr. W dodatku mielibyśmy problem, gdybyśmy chcieli np. wygenerować taki napis i zapamiętać pod jakąś nazwą, bo korzystamy z :func:`print` do rozdzielania elementów. Na szczęście jest lepszy sposób:
-```markdown
->>> bmi = 21.387755102040817
->>> category = "waga prawidłowa"
->>> wynik = "Twoje BMI: %f (%s)" % (bmi, category)
->>> wynik
-'Twoje BMI: 21.387755 (waga prawid\u0142owa)'
->>> print(wynik)
-Twoje BMI: 21.387755 (waga prawidłowa)
-```
-
-Mamy tutaj napis i krotkę połączone znakiem %. Napis jest szablonem, który będziemy wypełniać wartościami z krotki. Miejsca do wstawienia oznaczone są również procentem (%). Następująca po nim litera określa jakiego rodzaju wartość będziemy chcieli wstawić w to miejsce. I tak, liczbom całkowitym odpowiada i jak integer (zamiennie używa się też d jak decimal), napisom s jak string, a liczbom zmiennoprzecinkowym f jak float:
-
-```markdown
->>> "Napis: %s, Liczby: %d %f" % ("Ala", 10, 3.1415)
-'Napis: Ala, Liczby: 10 3.141500'
-```
-Teraz zamiast dziewięciu miejsc po przecinku zawsze dostajemy sześć, jednak formatowanie ma tę zaletę, że pozwala nam na większą kontrolę poprzez wstawienie pomiędzy % a znak f dodatkowych informacji, np. jeśli chcemy wyświetlić tylko dwa miejsca po kropce:
-
-```markdown
->>> "%.2f" % 3.1415
-'3.14'
->>> "%.2f" % 21.387755102040817
-'21.39'
-```
-Opcji formatowania jest mnóstwo, więc nie będziemy ich tu wszystkich pokazywać. Jedną z bardziej przydatnych jest wyrównanie do konkretnej liczby znaków:
-
-Możemy też wyrównać napis do lewej dodając - przed liczbą znaków:
-
-Wyrównanie na środek pozostawiamy jako ćwiczenie dla czytelnika. ;)
 
 ##Podsumowanie
 
@@ -591,4 +565,4 @@ Wiemy też, że wcięcia mogą mieć znaczenie, szczególnie gdy chcemy użyć i
 
 Umiemy stworzyć plik z programem i go uruchomić. Nasz program prosi użytkownika, aby odpowiedział na kilka prostych pytań, wykonuje obliczenia i prezentuje wynik w użytecznej dla niego formie.
 
-Całkiem sporo jak na nasz pierwszy program. Przed nami jeszcze dużo pracy, ale jak najbardziej możemy być dumni z tego co udało nam się zrobić do tej pory.
+Sporo się dowiedzieliśmy jak na nasz pierwszy program w języku Python, nie zapominajmy, że nami jeszcze dużo pracy. Jak najbardziej powinniśmy być dumni z swoich postępów!
