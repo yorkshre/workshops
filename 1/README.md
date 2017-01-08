@@ -334,6 +334,17 @@ Zanim skorzystamy z nowo poznanych funkcji w naszym programie, skonstruujmy ocze
 9. Nie powinno nas zaskoczyć, że te osiem punktów można wprost przełożyć na osiem linii naszego programu (nie licząc odstępów):
 
 Powyższy program możesz zapisać do pliku bmi.py i uruchomić python bmi.py. W efekcie powinniśmy dostać:
+```markdown
+print("Podaj wzrost w metrach:")
+wzrost = input()
+wzrost = float(wzrost)
+
+print("Podaj wage w kilogramach:")
+waga = input()
+waga = float(waga)
+bmi = waga / wzrost**2 # obliczanie BMI
+print("Twoje BMI wynosi:", bmi)
+```
 
 Podsumowując: aby wywołać funkcję, musimy znać jej nazwę (poznaliśmy dotąd część: :func:`print`, :func:`help`, :func:`input`, :func:`int`, :func:`float` i :func:`quit`), oraz wiedzieć, jakich danych ona od nas oczekuje (tzw. lista argumentów).
 
@@ -565,4 +576,4 @@ Wiemy też, że wcięcia mogą mieć znaczenie, szczególnie gdy chcemy użyć i
 
 Umiemy stworzyć plik z programem i go uruchomić. Nasz program prosi użytkownika, aby odpowiedział na kilka prostych pytań, wykonuje obliczenia i prezentuje wynik w użytecznej dla niego formie.
 
-Sporo się dowiedzieliśmy jak na nasz pierwszy program w języku Python, nie zapominajmy, że nami jeszcze dużo pracy. Jak najbardziej powinniśmy być dumni z swoich postępów!
+Sporo się dowiedzieliśmy jak na nasz pierwszy program w języku Python, nie zapominajmy, że przed nami jeszcze dużo pracy. Jak najbardziej powinniśmy być dumni z swoich postępów!
