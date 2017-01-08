@@ -18,7 +18,7 @@ Jest bardzo prawdopodobne, że masz już zainstalowanego Pythona wraz z systemem
 $ python3 --version
 Python 3.4.3
 ```
-Jeżeli nie masz zainstalowanego Pythona lub chciałabyś zainstalować go w innej wersji, skorzystaj z jednego z poniższych sposobów:
+Nie masz Pythona? A może chciałbyś zainstalować inmą jego wersje, w tej sytuacji skorzstaj z poniższych sposobów:
 
 ###Debian lub Ubuntu
 
