@@ -87,7 +87,7 @@ Na razie na tym skończymy naszą pracę z konsolą interaktywną. Aby z niej wy
 ```
 Lub (szybciej) wciskając na klawiaturze Ctrl+D w przypadku Linuxa lub Ctrl+Z w przypadku Windowsa.
 
-###Pliki źródłowe
+##Pliki źródłowe
 
 Do tej pory cały nasz kod wykonywany był w tzw. trybie interaktywnym, w którym podajemy komendy pojedynczo i natychmiast dostajemy na nie odpowiedź. Jest to świetny sposób na eksperymentowanie i poznawanie nowych elementów języka, więc jeszcze do niego wrócimy.
 
