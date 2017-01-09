@@ -84,6 +84,27 @@ W ten sposób użycie pętli uchroniło nas tak naprawdę przed pisaniem ośmiu 
 
 ##Skoro omawiamy pętle 
 
+Pętla for nie jest jedyną pętlą dostępną w Pythonie: jest tu też while. Pętla for to pętla o określonej długości, natomiast pętli while używa się, gdy nie wiemy kiedy musimy przestać ją używać. Wyobraź sobie, że wchodzisz po schodach i wiesz ile jest stopni. Schody znajdują się wewnątrz budynku, a ty wiesz doskonale, że z łatwością wespniesz się po nich. Tak właśnie wygląda pętla for. 
+
+```markdown
+>>> for stopień in range(0,20):
+...     print(stopień)
+```
+A teraz wyobraź sobie schody prowadzące zboczem góry. Góra jest bardzo wysoka i przed dotarciem na szczyt możesz się zmęczyć albo zacznie padać, co zmusi Cię do przerwania wspinaczki. Tak właśnie wygląda pętla while.
+
+```markdown
+stopień = 0
+while stopień <10000:
+    print(stopień)
+
+    if zmęczenie ==True:
+        break
+    elif brzydkaPogoda==True:
+        break
+    else:
+        stopień=stopień+1
+```
+
 
 #Podsumowanie
 
