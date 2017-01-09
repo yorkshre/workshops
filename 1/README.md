@@ -31,7 +31,7 @@ Python świetnie sprawdza się jako kalkulator:
 >>> 5 / 2
 2.5
 ```
-Należy zwrócić szczególną uwagę, że ułamki dziesiętne zapisujemy zgodnie z zasadami języka angielskiego, czyli z kropką, a nie z przecinkiem. Przecinki będą nam służyły do definiowania :ref:`krotek <bmi-tuples>` (ang. tuple), ale o tym później.
+Należy zwrócić szczególną uwagę, że ułamki dziesiętne zapisujemy zgodnie z zasadami języka angielskiego, czyli z kropką, a nie z przecinkiem. Przecinki będą nam służyły do definiowania `krotek` (ang. tuple), ale o tym później.
 
 ##Przedstaw się
 
@@ -62,7 +62,7 @@ Napis zawsze musi zaczynać się i kończyć tym samym znakiem. Może to być ap
 
 ###Drukowanie napisów
 
-Jak w takim razie przedstawić wartość w postaci czytelnej dla człowieka? Do tego posłuży nam funkcja :func:`print`:
+Jak w takim razie przedstawić wartość w postaci czytelnej dla człowieka? Do tego posłuży nam funkcja `print`:
 ```markdown
 >>> print("Witaj świecie")
 Witaj świecie
@@ -235,7 +235,7 @@ print("Twoje BMI to:", bmi)
 
 Nasz program wygląda już całkiem nieźle, ale użytkownik, chcąc policzyć swoje BMI, nadal musi zmieniać treść programu. Wygodniej byłoby, gdyby po uruchomieniu programu mógł wpisać wymagane wartości w konsoli i odczytać swoje BMI.
 
-Aby móc napisać taki program, musimy nauczyć się operowania funkcjami. Pierwszą, która poznamy, będzie :func:`help`:
+Aby móc napisać taki program, musimy nauczyć się operowania funkcjami. Pierwszą, która poznamy, będzie `help`:
 ```markdown
 >>> help
 Type help() for interactive help, or help(object) for help about object.
@@ -263,7 +263,7 @@ ala ma kota
 ```
 W tym momencie zapoznamy się z "wywoływaniem funkcji". Robi się to za pomocą nawiasów (), które informują interpreter, że ma daną funkcję wywołać. Wywołanie funkcji spowoduje uruchomienie jej. Jeżeli zapomnimy wpisać () po nazwie funkcji, nie zostanie ona wywołana i nie dostaniemy żadnego błędu (ponieważ jest to ciągle poprawny program).
 
-Wywołane funkcje najczęściej _zwracają_ jakąś wartość. Funkcja :func:`input` zwraca napis, dlatego możemy użyć jej wszędzie tam gdzie do tej pory używaliśmy napisów.
+Wywołane funkcje najczęściej _zwracają_ jakąś wartość. Funkcja `input` zwraca napis, dlatego możemy użyć jej wszędzie tam gdzie do tej pory używaliśmy napisów.
 
 Przykładowo możemy zapamiętać wczytany napis pod jakąś nazwą:
 
@@ -302,7 +302,7 @@ class float(object)
  |
  |  ...
  ```
-Funkcja :func:`help` nie omieszkała nas poinformować, iż w rzeczywistości :func:`int` i :func:`float` nie są funkcjami, lecz klasami (o czym będzie więcej później) - stąd też informacja na temat wszystkich innych rzeczy, do których można ich użyć. Nas na razie interesuje jedynie podstawowa funkcjonalność zamiany napisów na liczby odpowiedniego typu.
+Funkcja :func:`help` nie omieszkała nas poinformować, iż w rzeczywistości `int` i `float` nie są funkcjami, lecz klasami (o czym będzie więcej później) - stąd też informacja na temat wszystkich innych rzeczy, do których można ich użyć. Nas na razie interesuje jedynie podstawowa funkcjonalność zamiany napisów na liczby odpowiedniego typu.
 
 Przetestujmy :func:`int` i :func:`float`:
 ```markdown
@@ -346,7 +346,7 @@ bmi = waga / wzrost**2 # obliczanie BMI
 print("Twoje BMI wynosi:", bmi)
 ```
 
-Podsumowując: aby wywołać funkcję, musimy znać jej nazwę (poznaliśmy dotąd część: :func:`print`, :func:`help`, :func:`input`, :func:`int`, :func:`float` i :func:`quit`), oraz wiedzieć, jakich danych ona od nas oczekuje (tzw. lista argumentów).
+Podsumowując: aby wywołać funkcję, musimy znać jej nazwę (poznaliśmy dotąd część `print`,`help`,`input`, :func:`int`,`float` i `quit`), oraz wiedzieć, jakich danych ona od nas oczekuje (tzw. lista argumentów).
 
 Podanie samej nazwy nie wywoła funkcji, powie nam jedynie, że to funkcja:
 
@@ -376,7 +376,7 @@ Przejdźmy do naszego następnego problemu. Chcemy, aby nasz program, korzystaj�
 | 18,5 – 24,99  | waga prawidłowa |  
 | ≥ 25,0        | nadwaga         |  
 
-Skorzystamy więc z tzw. instrukcji warunkowej :keyword:`if`, która wykonuje dalszą część programu pod podanym warunkiem:
+Skorzystamy więc z tzw. instrukcji warunkowej `if`, która wykonuje dalszą część programu pod podanym warunkiem:
 
 Porównania: prawda czy fałsz?
 
@@ -395,7 +395,7 @@ False
 >>> -1 != 0
 True
 ```
-Wynikiem porównania jest zawsze True albo False. Porównania można łączyć w bardziej skomplikowane warunki za pomocą słów :keyword:`and` oraz :keyword:`or`:
+Wynikiem porównania jest zawsze True albo False. Porównania można łączyć w bardziej skomplikowane warunki za pomocą słów `and` oraz `or`:
 
 ```markdown
 >>> x = 5
@@ -429,7 +429,7 @@ Na razie nic się jeszcze nie wydarzyło, o czym świadczą kropki ... zamiast z
         ^
 IndentationError: expected an indented block
 ```
-Niestety, nie udało się nam. Python musi wiedzieć, czy instrukcja, którą wpisaliśmy, jest kontynuacją :keyword:`if` czy kolejną instrukcją nieobjętą warunkiem. W tym celu musimy wciąć nasz kod:
+Niestety, nie udało się nam. Python musi wiedzieć, czy instrukcja, którą wpisaliśmy, jest kontynuacją `if` czy kolejną instrukcją nieobjętą warunkiem. W tym celu musimy wciąć nasz kod:
 
 ```markdown
 >>> if 2 > 1:
@@ -476,7 +476,7 @@ DONE
 ```
 Co, jeśli nie?
 
-Samo :keyword:`if` właściwie by nam wystarczyło do napisania naszego programu:
+Samo `if` właściwie by nam wystarczyło do napisania naszego programu:
 ```markdown
 
 if bmi < 18.5:
@@ -487,9 +487,9 @@ if bmi >= 18.5:
 if bmi >= 25.0:
     print("nadwaga")
 ```
-Jednak użyliśmy jeszcze :keyword:`else` i :keyword:`elif`, aby nie musieć powtarzać podobnych warunków oraz zwiększyć czytelność. W bardziej skomplikowanych programach może nie być oczywiste na pierwszy rzut oka, że kolejny warunek jest przeciwieństwem poprzedniego.
+Jednak użyliśmy jeszcze `else` i `elif`, aby nie musieć powtarzać podobnych warunków oraz zwiększyć czytelność. W bardziej skomplikowanych programach może nie być oczywiste na pierwszy rzut oka, że kolejny warunek jest przeciwieństwem poprzedniego.
 
-Korzystając z :keyword:`else` mamy gwarancję, że podane tam instrukcje zostaną wykonane tylko jeśli nie zostały wykonane instrukcje wpisane pod :keyword:`if`:
+Korzystając z `else` mamy gwarancję, że podane tam instrukcje zostaną wykonane tylko jeśli nie zostały wykonane instrukcje wpisane pod `if`:
 
 ```markdown
 if bmi < 18.5:
@@ -504,7 +504,7 @@ else:
         # już tego sprawdzać
         print("nadwaga")
  ```
-Zwróć szczególną uwagę na wcięcia. ;) Każde użycie :keyword:`else`, będzie powodować, że nasz kod będzie coraz bardziej wcięty. Jest to bardzo uciążliwe, gdy mamy do sprawdzenia kilka czy kilkanaście wykluczających się warunków. Dlatego autorzy języka dodali drobne "usprawnienie" w postaci instrukcji :keyword:`elif`, która pozwala od razu sprawdzić kolejny warunek:
+Zwróć szczególną uwagę na wcięcia. ;) Każde użycie `else`, będzie powodować, że nasz kod będzie coraz bardziej wcięty. Jest to bardzo uciążliwe, gdy mamy do sprawdzenia kilka czy kilkanaście wykluczających się warunków. Dlatego autorzy języka dodali drobne "usprawnienie" w postaci instrukcji `elif`, która pozwala od razu sprawdzić kolejny warunek:
 ```markdown
 if n < 1:
     print("jeden")
@@ -570,9 +570,9 @@ Do zgrupowanych wartości możemy odwołać się używając ich pozycji w krotce
 
 W tym rozdziale poznaliśmy podstawy składni Pythona. Wiemy jak zapisać liczby całkowite, liczby zmiennoprzecinkowe, napisy oraz krotki z nich złożone.
 
-Poznaliśmy funkcję :func:`print`, która wypisuje informacje użytkownikowi oraz funkcję :func:`input`, która je od niego wczytuje.
+Poznaliśmy funkcję `print`, która wypisuje informacje użytkownikowi oraz funkcję `input`, która je od niego wczytuje.
 
-Wiemy też, że wcięcia mogą mieć znaczenie, szczególnie gdy chcemy użyć instrukcji :keyword:`if` (również w połączeniu z :keyword:`else` i :keyword:`elif`).
+Wiemy też, że wcięcia mogą mieć znaczenie, szczególnie gdy chcemy użyć instrukcji `if` (również w połączeniu z `else` i `elif`).
 
 Umiemy stworzyć plik z programem i go uruchomić. Nasz program prosi użytkownika, aby odpowiedział na kilka prostych pytań, wykonuje obliczenia i prezentuje wynik w użytecznej dla niego formie.
 
