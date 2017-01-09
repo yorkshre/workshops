@@ -55,8 +55,8 @@ Napisy można również dodawać:
 ```
 oraz mnożyć przez liczby całkowite:
 ```markdown
->>> 'Hastur' * 3
-'HasturHasturHastur'
+>>> 'Robin' * 3
+'RobinRobinRobin'
 ```
 Napis zawsze musi zaczynać się i kończyć tym samym znakiem. Może to być apostrof (') albo cudzysłów ("). Nie ma to wpływu na wartość napisu, tzn. wpisując "Batman" tworzymy napis Batman - cudzysłowowy nie są jego częścią, służą jedynie wskazaniu, że jest to napis (niestety, Python nie jest aż tak sprytny, aby się tego domyślić).
 
@@ -93,12 +93,12 @@ Do tej pory cały nasz kod wykonywany był w tzw. trybie interaktywnym, w który
 
 Nasz pierwszy program może wyglądać tak:
 ```markdown
-print("Cześć, mam na imię Łukasz.")
+print("Cześć, mam na imię Agata.")
 ```
 Zapisz ten program w pliku wizytowka.py, a następnie uruchom go z linii poleceń wykonując python wizytowka.py:
 ```markdown
 (warsztaty) ~$ python wizytowka.py
-Cześć, mam na imię Łukasz.
+Cześć, mam na imię Agata.
 (warsztaty) ~$
 ```
 Pojedynczy program może zawierać więcej niż jedno polecenie. Każde powinno znajdować się w osobnej linii, np.:
@@ -106,7 +106,7 @@ Pojedynczy program może zawierać więcej niż jedno polecenie. Każde powinno 
 print("Cześć,")
 print()
 
-print("Mam na imię Łukasz.")
+print("Mam na imię Agata.")
 
 print()
 print("Papa.")
@@ -231,7 +231,7 @@ bmi = weight / height**2 # Obliczamy BMI
 print("Twoje BMI to:", bmi)
 ```
 
-#Wywoływanie funkcji
+##Wywoływanie funkcji
 
 Nasz program wygląda już całkiem nieźle, ale użytkownik, chcąc policzyć swoje BMI, nadal musi zmieniać treść programu. Wygodniej byłoby, gdyby po uruchomieniu programu mógł wpisać wymagane wartości w konsoli i odczytać swoje BMI.
 
@@ -366,7 +366,7 @@ Wszystkie argumenty podajemy w nawiasach. Aby podać więcej niż jeden, rozdzie
 >>> int("FF", 16)
 255
 ```
-#Sprawdzanie warunków
+##Sprawdzanie warunków
 
 Przejdźmy do naszego następnego problemu. Chcemy, aby nasz program, korzystając z poniższej tabeli, wypisał odpowiednią dla obliczonego BMI klasyfikację:
 
@@ -516,7 +516,7 @@ elif n < 3:
     # n >= 1 i n>= 2, ale n < 3
     print("trzy")
 else:
-    # trolle umieją liczyć jedynie do trzech
+    # liczymy tylko do trzech
     print("dużo")
 ```
 ##Formatowanie napisów
