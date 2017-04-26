@@ -1,4 +1,4 @@
-#Wprowadzenie do Pythona
+# Wprowadzenie do Pythona
 
 
 Zacznijmy od uruchomienia interpretera, który zainstalowaliśmy w poprzednim rozdziale. Uruchom:
@@ -33,9 +33,9 @@ Python świetnie sprawdza się jako kalkulator:
 ```
 Należy zwrócić szczególną uwagę, że ułamki dziesiętne zapisujemy zgodnie z zasadami języka angielskiego, czyli z kropką, a nie z przecinkiem. Przecinki będą nam służyły do definiowania `krotek` (ang. tuple), ale o tym później.
 
-##Przedstaw się
+## Przedstaw się
 
-###Napisy
+### Napisy
 
 Same liczby to jednak trochę za mało do skutecznego porozumiewania się. Musimy więc nauczyć się posługiwać napisami (ang. string). Oto kilka przykładów:
 ```markdown
@@ -60,7 +60,7 @@ oraz mnożyć przez liczby całkowite:
 ```
 Napis zawsze musi zaczynać się i kończyć tym samym znakiem. Może to być apostrof (') albo cudzysłów ("). Nie ma to wpływu na wartość napisu, tzn. wpisując "Batman" tworzymy napis Batman - cudzysłowowy nie są jego częścią, służą jedynie wskazaniu, że jest to napis (niestety, Python nie jest aż tak sprytny, aby się tego domyślić).
 
-###Drukowanie napisów
+### Drukowanie napisów
 
 Jak w takim razie przedstawić wartość w postaci czytelnej dla człowieka? Do tego posłuży nam funkcja `print`:
 ```markdown
@@ -87,7 +87,7 @@ Na razie na tym skończymy naszą pracę z konsolą interaktywną. Aby z niej wy
 ```
 Lub (szybciej) wciskając na klawiaturze Ctrl+D w przypadku Linuxa lub Ctrl+Z w przypadku Windowsa.
 
-##Pliki źródłowe
+## Pliki źródłowe
 
 Do tej pory cały nasz kod wykonywany był w tzw. trybie interaktywnym, w którym podajemy komendy pojedynczo i natychmiast dostajemy na nie odpowiedź. Jest to świetny sposób na eksperymentowanie i poznawanie nowych elementów języka, więc jeszcze do niego wrócimy.
 
@@ -114,7 +114,7 @@ print("Papa.")
 
 Puste linie pozwalają oddzielić wizualnie różne części programu, tak aby ułatwić rozczytanie jego treści. Tutaj rozdzieliliśmy nagłówek wiadomości od jej treści i zakończenia.
 
-##Kalkulator BMI
+## Kalkulator BMI
 
 Teraz napiszemy prosty program do kalkulacji BMI (Body Mass Index). Formuła do jego obliczenia jest następująca:
 
@@ -143,7 +143,7 @@ Jak widać, nasz program wymaga jeszcze nieco pracy:
 
 Ale programowanie to w końcu sztuka rozwiązywania problemów, więc do dzieła. Przy okazji poznamy kilka nowych elementów Pythona.
 
-##Nazwy
+## Nazwy
 
 Spróbujmy więc rozwiązać pierwszy problem. Na początek chcielibyśmy, aby nasz program był bardziej czytelny, tj. aby dla czytającego było oczywiste, która wartość to waga, a która wzrost.
 
@@ -231,7 +231,7 @@ bmi = weight / height**2 # Obliczamy BMI
 print("Twoje BMI to:", bmi)
 ```
 
-##Wywoływanie funkcji
+## Wywoływanie funkcji
 
 Nasz program wygląda już całkiem nieźle, ale użytkownik, chcąc policzyć swoje BMI, nadal musi zmieniać treść programu. Wygodniej byłoby, gdyby po uruchomieniu programu mógł wpisać wymagane wartości w konsoli i odczytać swoje BMI.
 
@@ -411,7 +411,7 @@ False
 True
 ```
 
-##Wcięcia
+## Wcięcia
 
 Kolejna rzecz, na którą warto zwrócić uwagę, to wcięcia w kodzie. Otwórz tryb interaktywny i wpisz prosty warunek, np.:
 ```markdown
@@ -519,13 +519,13 @@ else:
     # liczymy tylko do trzech
     print("dużo")
 ```
-##Formatowanie napisów
+## Formatowanie napisów
 
 Ostatnim problemem, o którym wspomnieliśmy, była zbyt duża ilość cyfr w wypisywanym BMI. Ze wszystkich trzech jest on najprostszy do rozwiązania, dlatego zostawiliśmy go sobie na koniec naszej "przygody" z kalkulatorem BMI.
 
 Wiemy już, że napisy można dodawać do siebie oraz mnożyć przez liczby całkowite. Zaraz zobaczymy, że można też wykonać na nich operację formatowania. Jednak najpierw potrzebny nam będzie jeszcze jeden typ danych (oprócz napisów i liczb, które już znamy).
 
-##Krotki
+## Krotki
 
 Na samym początku wspomnieliśmy już, że nie możemy używać przecinka w liczbach, bo będzie nam potrzebny później do krotek. A oto i one:
 
@@ -566,7 +566,7 @@ Do zgrupowanych wartości możemy odwołać się używając ich pozycji w krotce
 ```
 
 
-##Podsumowanie
+## Podsumowanie
 
 W tym rozdziale poznaliśmy podstawy składni Pythona. Wiemy jak zapisać liczby całkowite, liczby zmiennoprzecinkowe, napisy oraz krotki z nich złożone.
 
