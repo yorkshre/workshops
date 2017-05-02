@@ -45,8 +45,8 @@ przy użyciu mnożenia napisów (``"*" * 100``, itd.). Ewidentnie jest to
 czynność tak powtarzalna, że program może to zrobić za nas.
 
 
-Listy i pętla ``for``
-=====================
+## Listy i pętla ``for``
+
 
 Do wykonywania takich powtarzalnych czynności będą służyły nam pętle.
 Pozostając w konwencji świątecznej, wyobraźmy sobie na chwilę, że
@@ -248,8 +248,8 @@ pierwszej (zewnętrznej) pętli, druga wykonywała się raz więcej. W ten spos�
 powinniśmy otrzymać naszą pół-choinkę z początku rozdziału.
 
 
-Definiowanie funkcji
-====================
+## Definiowanie funkcji
+
 
 Widzieliśmy już jak funkcję rozwiązują wiele z naszych problemów. Jednak
 nie rozwiązują ich wszystkich lub nie do końca tak jakbyśmy chcieli.
@@ -358,8 +358,8 @@ Na koniec rozwiążemy w elegacki sposób problem z końca poprzedniego rozdzia�
     ****
 
 
-Obiekty i klasy
-===============
+#Obiekty i klasy
+
 
 Właściwie ten rozdział mógłby być tematem całej serii zajęć, my jednak
 skupimy się na absolutnych podstawach, które będą nam potrzebne przy
@@ -463,26 +463,26 @@ Podsumowując, poznaliśmy już klasy :func:`int`, :func:`str`, :func:`tuple`,
 klasę podobnie jak wywoływaliśmy funkcję, dopisując nawiasy ``()``, na przykład
 ``int()``.
 
-Definiowanie klass
-------------------
+## Definiowanie klass
+
 
 Podobnie jak możemy tworzyć własne funkcje, tak i możemy tworzyć
 własne klasy. W gruncie rzeczy, klasa to nic innego jak zgrupowane
 funkcje:
 
-.. testsetup:: simple-class
+
 
     class Dog(object):
 
         def bark(self):
-            print(u"Woof! Woof!")
+            print("Woof! Woof!")
 
-::
+
 
     class Dog(object):
 
         def bark(self):
-            print(u"Woof! Woof!")
+            print("Woof! Woof!")
 
 Klasy rozpoczynają się od słowa :keyword:`class`, po którym podajemy
 nazwę nowej klasy. Czym jest ``(object)`` wyjaśni się później, gdy
@@ -492,31 +492,28 @@ Warto natomiast zwrócić uwagę na fakt, że każda funkcja w klasie musi mieć
 conajmniej jeden argument. Jego wartością będzie obiekt z którego wywołaliśmy
 tą funkcję (czyli to co przed kropką):
 
-.. testcode:: simple-class
 
     burek = Dog()
     burek.bark()
 
-.. testoutput:: simple-class
 
     Woof! Woof!
 
 Argument ten może nazywać się dowolnie, ale intuicyjne jest aby nazwać go ``self``.
 
 
-Atrybuty obiektów
------------------
+### Atrybuty obiektów
+
 
 Obiekty poza metodami (funckjami), mogą posiadać też atrybuty:
 
-.. testcode:: simple-class
+
 
     burek = Dog()
     burek.name = "Burek"
 
     print(burek.name)
 
-.. testoutput:: simple-class
 
     Burek
 
@@ -524,7 +521,6 @@ Czasami chcemy aby każdy obiekt danej klasy miał jakiś atrybut, np. każdy
 pies powinien mieć imię. Możemy dodać takie wymaganie definiując funkcję
 o specjalnej nazwie ``__init__``:
 
-.. testcode:: init-class
 
     class Dog(object):
 
@@ -539,14 +535,14 @@ o specjalnej nazwie ``__init__``:
     print(burek.bark())
     print(pluto.bark())
 
-.. testoutput:: init-class
+Tak to wygląda po uruchomieniu:
 
     Woof! Burek! Woof!
     Woof! Pluto! Woof!
 
 
-Pełna choinka
-=============
+### Pełna choinka
+
 
 Poprzedni rozdział był dość teoretyczny, więc teraz postaramy się
 skorzystać przynajmniej z części tej wiedzy kończąc nasz program
@@ -640,12 +636,10 @@ do tej szerokości. Łącząc całą naszą dotychczasową wiedzę:
         for i in range(3, size+1, 2):
             print_segment(i, size)
 
-    print(u"Podaj wielkość choinki:")
+    print("Podaj wielkość choinki:")
     n = int(raw_input())
     print_tree(n)
 
-.. testoutput:: tree-final
-    :options: +NORMALIZE_WHITESPACE
 
     Podaj wielkość choinki:
     7
@@ -660,8 +654,7 @@ do tej szerokości. Łącząc całą naszą dotychczasową wiedzę:
     *******
 
 
-Zadanie dla chętnych
---------------------
+## Zadanie dla chętnych
 
 Stwórz klasę ``XMASTree`` która dla podanego rozmiaru i wywołaniu
 metody ``draw``, wydrukuje poniższe obrazki (rozmiary 1, 2 i 3):
@@ -699,8 +692,3 @@ metody ``draw``, wydrukuje poniższe obrazki (rozmiary 1, 2 i 3):
 
 
 
-.. rubric:: Przypisy
-
-.. [#speed] Zakładając, że mamy 24 godziny na dostarczenie po jednym
-    prezencie dla każdego na świecie, na każdy prezent przypada około
-    10 mikrosekund.
